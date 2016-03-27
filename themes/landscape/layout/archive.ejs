@@ -1,0 +1,10 @@
+<!--<% if (false){ %>
+  <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+<% } %>-->
+  
+<section id="main">
+  <%- partial('_partial/archive', {pagination: 2, index: true}) %>
+</section>
+<% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+  <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+<% } %>

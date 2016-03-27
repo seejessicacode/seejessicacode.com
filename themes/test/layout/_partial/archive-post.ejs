@@ -1,0 +1,10 @@
+<article class="archive-article archive-type-<%= post.layout %>">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY-MM-DD'}) %>
+      <% if (post.categories && post.categories.length){ %> / <% post.categories.forEach(function(category, i){ %><% if(i) { %>, <% } %><%- category.name %><% }) %><% } %>
+      <%- partial('post/title', {class_name: 'archive-article-title'}) %>
+      <%- post.excerpt %> <a href="<%- url_for(post.path) %>">[...]</a>
+    </header>
+  </div>
+</article>

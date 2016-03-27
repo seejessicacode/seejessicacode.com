@@ -1,0 +1,75 @@
+ul {
+  padding: 0;
+  margin: 16px 0;
+}
+
+#header {
+  background-color: darkgray;
+  width: 80px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 0 10px;
+}
+
+header.article-header h1 {
+  margin: 24.12px 0;
+}
+
+#head-icon {
+  height: 130px;
+  border-radius: 50%;
+}
+
+#menu ul {
+  list-style-type: none;
+}
+
+#container {
+  margin-left: 100px;
+  margin-right: 25px;
+  padding: 0 40px;
+  padding-top: 50px;
+}
+
+.article-entry h1 {
+  font-size: 1.51em;
+  margin-top: 50px;
+  margin-bottom: 19.92px;
+}
+
+.article-entry h2 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.article-entry p {
+  margin-top: 0;
+}
+
+header.archive-article-header {
+  margin-bottom: 50px;
+}
+
+header.archive-article-header h2 {
+  font-size: 1em;
+}
+
+.archive-article-date {
+  font-size: 14px;
+}
+
+.archive-article-title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 19.92px;
+}
+
+.archive-article-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.archive-article-title a:hover {
+  text-decoration: underline;
+}
