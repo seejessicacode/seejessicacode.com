@@ -1,13 +1,8 @@
 <article class="archive-article archive-type-<%= post.layout %>">
-  archive-post.ejs
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'YYYY'}) %>
+      <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
       <%- partial('post/title', {class_name: 'archive-article-title'}) %>
-      <% if (post.thumbnail) { %>
-        <aside>Thumbnail goes here nigga!</aside>
-      <% } %>
-      <%- post.excerpt %>
     </header>
   </div>
 </article>

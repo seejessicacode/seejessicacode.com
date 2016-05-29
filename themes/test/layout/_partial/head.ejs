@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
   <meta charset="utf-8">
   <%
@@ -21,15 +19,24 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!--<%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>-->
   <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"> -->
   <%- css('css1/normalize') %>
   <%- css('css1/style') %>
-  <!-- <%- partial('google-analytics') %>-->
+  
+  <% if(!is_archive() && !is_category() && !is_tag() && !is_post()){ %>
+  <style type="text/css">
+      #head{
+        height:90px;
+        padding-top: 50px;
+      }
+      #head-icon{
+        width: 130px;
+      }
+    </style>
+  <% } %>
 </head>

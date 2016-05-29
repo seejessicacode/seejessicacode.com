@@ -1,16 +1,8 @@
-<header id="header">
-  <div id="menu">
-    <ul>
-      <li>
-        <a href="<%- url_for() %>" id="logo">
-          <img src="/css1/images/sora.jpg" id="head-icon">
-        </a>
-      </li>
-      <% for (var i in theme.menu){ %>
-      <li>
-        <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-      </li>
-      <% } %>
-    </ul>
-  </div>
-</header>
+<div id="side">
+  <ul>
+    <li><a href="<%- url_for() %>"><img src="/css1/images/sora.jpg" id="head-icon"></a></li>
+    <% for (var i in theme.menu){ %>
+    <li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+    <% } %>
+  </ul>
+</div>

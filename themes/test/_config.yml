@@ -5,7 +5,7 @@ menu:
 rss: atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: "[...]"
 fancybox: true
 
 # Sidebar
@@ -13,9 +13,9 @@ sidebar: right
 widgets:
 - category
 - tag
-- tagcloud
-- archive
-- recent_posts
+#- tagcloud
+#- archive
+#- recent_posts
 
 # Miscellaneous
 google_analytics:
